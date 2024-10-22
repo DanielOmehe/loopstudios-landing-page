@@ -4,6 +4,9 @@
   --color-dark-gray: hsl(0, 0%, 55%);
   --color-very-dark-gray: hsl(0, 05, 41%);
 
+  --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  --card-gradient: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.54));
+
   --font-size: 15px;
 
   --alate-font-family: "Alata", sans-serif;
@@ -16,11 +19,291 @@
   box-sizing: border-box;
 }
 
-.loopstudios-landing-page-header{
-    width: 100%;
-    height: 90vh;
-    background: url('images/desktop/image-hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.loopstudios-landing-page-header {
+  width: 100%;
+  height: 85vh;
+  background: var(--hero-gradient), url("images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.loopstudios-landing-page-navbar {
+  width: 100%;
+  padding: 4rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loopstudio-nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.5rem;
+}
+
+.loopstudio-nav-item {
+  list-style: none;
+  font-size: var(--font-size);
+  font-family: var(--alate-font-family);
+}
+
+.loopstudio-nav-item a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.hover-line {
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 6.5rem;
+  display: none;
+}
+
+.loopstudio-header-content {
+  width: 40%;
+  margin: 5rem 0 0 10rem;
+  padding: 1rem 2rem;
+  border: 2px solid var(--color-white);
+}
+
+.loopstudio-header-content h1 {
+  font-size: 4.5rem;
+  color: var(--color-white);
+  font-family: var(--josefin-font-family);
+  text-transform: uppercase;
+  font-weight: 200;
+  line-height: 5rem;
+}
+
+.loopstudio-page-content {
+  background-color: var(--color-white);
+  padding: 10rem;
+}
+
+.interactive-vr-section {
+  width: 100%;
+  position: relative;
+}
+
+.interactive-vr-section-left {
+  width: 60%;
+  height: 500px;
+  background-image: url("images/desktop/image-interactive.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.interactive-vr-section-right {
+  width: 700px;
+  height: fit-content;
+  padding: 6rem;
+  position: absolute;
+  bottom: -6.5rem;
+  right: -2.5rem;
+  background-color: var(--color-white);
+}
+
+.interactive-vr-heading {
+  font-size: 3.5rem;
+  font-family: var(--josefin-font-family);
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.interactive-vr-paragraph {
+  font-size: var(--font-size);
+  color: var(--color-very-dark-gray);
+  opacity: 0.7;
+  font-family: var(--alate-font-family);
+  padding-right: 2rem;
+}
+
+.our-creation {
+  width: 100%;
+  padding: 8rem 0 0 0;
+  height: fit-content;
+  border: 2px solid var(--color-very-dark-gray);
+}
+
+.our-creation-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-creation-header h2 {
+  font-size: 3rem;
+  font-family: var(--josefin-font-family);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.our-creation-header button {
+  font-size: var(--font-size);
+  font-family: var(--alate-font-family);
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 2px solid var(--color-black);
+  padding: 0.6rem 3rem;
+  background: none;
+  cursor: pointer;
+  letter-spacing: 0.35rem;
+}
+
+.our-creation-cards {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 500px 500px;
+  gap: 2rem;
+  border: 2px solid var(--color-very-dark-gray);
+}
+
+.our-creation-card {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.our-creation-card h3 {
+  font-size: 2rem;
+  padding-right: 10rem;
+  font-weight: 300;
+  font-family: var(--josefin-font-family);
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 2rem;
+  color: var(--color-white);
+}
+
+.our-creation-card.earth {
+  background-image: var(--card-gradient),
+    url("images/desktop/image-deep-earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.arcade {
+  background-image: var(--card-gradient),
+    url("images/desktop/image-night-arcade.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.team {
+  background-image: var(--card-gradient),
+    url("images/desktop/image-soccer-team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.team h3 {
+  padding-right: 6rem;
+}
+
+.our-creation-card.grid {
+  background-image: var(--card-gradient), url("images/desktop/image-grid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.above {
+  background-image: var(--card-gradient),
+    url("images/desktop/image-from-above.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.above h3 {
+  padding-right: 6rem;
+}
+
+.our-creation-card.borealis {
+  background-image: var(--card-gradient),
+    url("images/desktop/image-pocket-borealis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.curiosity {
+  background-image: var(--card-gradient),
+    url("images/desktop/image-curiosity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.fisheye {
+  background-image: var(--card-gradient),
+    url("images/desktop/image-fisheye.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loopstudio-footer {
+  width: 100%;
+  height: fit-content;
+  padding: 3rem 10rem;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.loopstudio-footer-left {
+  width: 50%;
+}
+
+.loopstudio-footer-left .footer-logo {
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+}
+
+.footer-link {
+  list-style: none;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: var(--alate-font-family);
+  font-size: var(--font-size);
+}
+
+.loopstudio-footer-right {
+  width: 50%;
+  text-align: right;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-icon{
+    cursor: pointer;
+}
+
+.loopstudio-footer-right p{
+    font-size: var(--font-size);
+    font-family: var(--alate-font-family);
+    color: var(--color-dark-gray);
 }
