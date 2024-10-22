@@ -6,6 +6,10 @@
 
   --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   --card-gradient: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.54));
+  --card-hover-gradient: linear-gradient(
+    rgba(140, 140, 140, 0.774),
+    rgba(140, 140, 140, 0.774)
+  );
 
   --font-size: 15px;
 
@@ -157,6 +161,12 @@
   letter-spacing: 0.35rem;
 }
 
+.our-creation-header button:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  transition: 0.2s linear;
+}
+
 .our-creation-cards {
   padding: 5rem 0;
   display: grid;
@@ -172,6 +182,10 @@
   padding: 2rem;
   position: relative;
   cursor: pointer;
+}
+
+.our-creation-card:hover h3{
+    color: var(--color-black);
 }
 
 .our-creation-card h3 {
@@ -192,6 +206,14 @@
   background-size: cover;
 }
 
+.our-creation-card.earth:hover {
+  background: var(--card-hover-gradient),
+    url("images/desktop/image-deep-earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .25s linear;
+}
+
 .our-creation-card.arcade {
   background-image: var(--card-gradient),
     url("images/desktop/image-night-arcade.jpg");
@@ -199,8 +221,22 @@
   background-size: cover;
 }
 
+.our-creation-card.arcade:hover {
+  background-image: var(--card-hover-gradient),
+    url("images/desktop/image-night-arcade.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .our-creation-card.team {
   background-image: var(--card-gradient),
+    url("images/desktop/image-soccer-team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.team:hover {
+  background-image: var(--card-hover-gradient),
     url("images/desktop/image-soccer-team.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,8 +252,21 @@
   background-size: cover;
 }
 
+.our-creation-card.grid:hover {
+  background-image: var(--card-hover-gradient), url("images/desktop/image-grid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .our-creation-card.above {
   background-image: var(--card-gradient),
+    url("images/desktop/image-from-above.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.above:hover {
+  background-image: var(--card-hover-gradient),
     url("images/desktop/image-from-above.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -234,6 +283,13 @@
   background-size: cover;
 }
 
+.our-creation-card.borealis:hover {
+  background-image: var(--card-hover-gradient),
+    url("images/desktop/image-pocket-borealis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .our-creation-card.curiosity {
   background-image: var(--card-gradient),
     url("images/desktop/image-curiosity.jpg");
@@ -241,8 +297,22 @@
   background-size: cover;
 }
 
+.our-creation-card.curiosity:hover {
+  background-image: var(--card-hover-gradient),
+    url("images/desktop/image-curiosity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .our-creation-card.fisheye {
   background-image: var(--card-gradient),
+    url("images/desktop/image-fisheye.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-creation-card.fisheye:hover {
+  background-image: var(--card-hover-gradient),
     url("images/desktop/image-fisheye.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,12 +368,12 @@
   margin-bottom: 2rem;
 }
 
-.social-icon{
-    cursor: pointer;
+.social-icon {
+  cursor: pointer;
 }
 
-.loopstudio-footer-right p{
-    font-size: var(--font-size);
-    font-family: var(--alate-font-family);
-    color: var(--color-dark-gray);
+.loopstudio-footer-right p {
+  font-size: var(--font-size);
+  font-family: var(--alate-font-family);
+  color: var(--color-dark-gray);
 }
