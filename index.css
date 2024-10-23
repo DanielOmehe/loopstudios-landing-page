@@ -63,7 +63,13 @@
   height: 2px;
   background-color: var(--color-white);
   position: absolute;
-  top: 6.5rem;
+  top: 6rem;
+  left: 0;
+  display: none;
+  transition: left 0.5s ease;
+}
+
+.loopstudio-mobile-menu {
   display: none;
 }
 
@@ -336,6 +342,7 @@
 
 .loopstudio-footer-left {
   width: 50%;
+  position: relative;
 }
 
 .loopstudio-footer-left .footer-logo {
@@ -358,6 +365,16 @@
   color: var(--color-white);
   font-family: var(--alate-font-family);
   font-size: var(--font-size);
+}
+
+.footer-line {
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-white);
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  /* display: none; */
 }
 
 .loopstudio-footer-right {
@@ -490,7 +507,7 @@
   }
 
   .loopstudio-page-content {
-    padding: 6rem;
+    padding: 6rem 3rem;
   }
 
   .interactive-vr-section-left {
@@ -522,7 +539,7 @@
   }
 
   .our-creation-card.team h3 {
-    padding-right: 12rem;
+    padding-right: 8rem;
   }
 
   .our-creation-header h2 {
@@ -881,6 +898,145 @@
     height: 100vh;
   }
 
+  .loopstudio-mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 1.5rem;
+    background-color: var(--color-black);
+    z-index: 1;
+  }
+
+  .loopstudio-mobile-menu.open {
+    left: 0;
+    animation: menuIn 0.3s ease-in-out;
+  }
+
+  .loopstudio-mobile-menu.close {
+    left: -100%;
+    animation: menuOut 0.3s ease-in-out;
+  }
+
+  @keyframes menuIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes menuOut {
+    from {
+      opacity: 1;
+      left: 0%;
+    }
+    to {
+      opacity: 0;
+      left: -100%;
+    }
+  }
+
+  .loopstudio-mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .loopstudio-mobile-menu.open .loopstudio-mobile-header {
+    animation: fadeIn 0.4s ease-in-out 0.1s;
+  }
+
+  .loopstudio-mobile-menu.close .loopstudio-mobile-header {
+    animation: fadeOut 0.4s ease-in-out 0.1s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100);
+      opacity: 0;
+    }
+  }
+
+  .loopstudio-mobile-header button {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  .mobile-menu-items {
+    display: none;
+  }
+
+  .mobile-menu-items {
+    display: block;
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .mobile-menu-item {
+    width: 100%;
+    margin: 1.3rem 0;
+  }
+
+  .loopstudio-mobile-menu.open .mobile-menu-item:nth-child(1) {
+    animation: slideIn 0.2s ease-in-out 0.1s;
+  }
+
+  .loopstudio-mobile-menu.open .mobile-menu-item:nth-child(2) {
+    animation: slideIn 0.2s ease-in-out 0.2s;
+  }
+
+  .loopstudio-mobile-menu.open .mobile-menu-item:nth-child(3) {
+    animation: slideIn 0.2s ease-in-out 0.3s;
+  }
+  .loopstudio-mobile-menu.open .mobile-menu-item:nth-child(4) {
+    animation: slideIn 0.2s ease-in-out 0.4s;
+  }
+  .loopstudio-mobile-menu.open .mobile-menu-item:nth-child(5) {
+    animation: slideIn 0.2s ease-in-out 0.5s;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .mobile-menu-item a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--josefin-font-family);
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-weight: 200;
+  }
+
   .loopstudios-landing-page-navbar {
     padding: 3rem;
   }
@@ -911,7 +1067,6 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
-
   }
 
   .interactive-vr-section-left {
@@ -929,7 +1084,7 @@
     padding: 0 3rem;
   }
 
-  .interactive-vr-section-right p{
+  .interactive-vr-section-right p {
     padding: 0;
   }
 
@@ -946,18 +1101,18 @@
     line-height: 3.5rem;
   }
 
-  .our-creation{
+  .our-creation {
     position: relative;
     text-align: center;
   }
 
-  .our-creation-header{
+  .our-creation-header {
     width: 100%;
     text-align: center;
     display: block;
   }
 
-  .our-creation-header button{
+  .our-creation-header button {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -975,7 +1130,8 @@
   }
 
   .our-creation-card.earth {
-    background-image:var(--card-gradient), url('images/mobile/image-deep-earth.jpg');
+    background-image: var(--card-gradient),
+      url("images/mobile/image-deep-earth.jpg");
   }
 
   .our-creation-card.earth h3 {
@@ -983,31 +1139,31 @@
   }
 
   .our-creation-card.arcade {
-    background-image: url('images/mobile/image-night-arcade.jpg');
+    background-image: url("images/mobile/image-night-arcade.jpg");
   }
 
   .our-creation-card.team {
-    background-image: url('images/mobile/image-soccer-team.jpg');
+    background-image: url("images/mobile/image-soccer-team.jpg");
   }
 
   .our-creation-card.grid {
-    background-image: url('images/mobile/image-grid.jpg');
+    background-image: url("images/mobile/image-grid.jpg");
   }
 
   .our-creation-card.above {
-    background-image: url('images/mobile/image-from-above.jpg');
+    background-image: url("images/mobile/image-from-above.jpg");
   }
 
   .our-creation-card.borealis {
-    background-image: url('images/mobile/image-pocket-borealis.jpg');
+    background-image: url("images/mobile/image-pocket-borealis.jpg");
   }
 
   .our-creation-card.curiosity {
-    background-image: url('images/mobile/image-curiosity.jpg');
+    background-image: url("images/mobile/image-curiosity.jpg");
   }
 
   .our-creation-card.fisheye {
-    background-image: url('images/mobile/image-fisheye.jpg');
+    background-image: url("images/mobile/image-fisheye.jpg");
   }
 
   .our-creation-card.team h3 {
@@ -1034,12 +1190,12 @@
     flex-direction: column;
   }
 
-  .social-icons{
+  .social-icons {
     width: 100%;
     justify-content: center;
   }
 
-  .loopstudio-footer-right p{
+  .loopstudio-footer-right p {
     text-align: center;
   }
 }
@@ -1069,7 +1225,7 @@
     padding: 0 3rem;
   }
 
-  .interactive-vr-section-right p{
+  .interactive-vr-section-right p {
     padding: 0;
   }
 
@@ -1086,12 +1242,12 @@
     line-height: 3.5rem;
   }
 
-  .our-creation{
+  .our-creation {
     position: relative;
     text-align: center;
   }
 
-  .our-creation-header{
+  .our-creation-header {
     width: 100%;
     text-align: center;
     display: block;
@@ -1128,11 +1284,6 @@
     display: none;
   }
 
-  .loopstudio-header-content {
-    width: 60%;
-    margin: 6rem 0 0 2rem;
-  }
-
   .loopstudio-page-content {
     padding: 4rem 2rem;
     overflow: hidden;
@@ -1142,7 +1293,6 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
-
   }
 
   .interactive-vr-section-left {
@@ -1160,7 +1310,7 @@
     padding: 0 3rem;
   }
 
-  .interactive-vr-section-right p{
+  .interactive-vr-section-right p {
     padding: 0;
   }
 
@@ -1173,22 +1323,22 @@
   }
 
   .loopstudio-header-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
   }
 
-  .our-creation{
+  .our-creation {
     position: relative;
     text-align: center;
   }
 
-  .our-creation-header{
+  .our-creation-header {
     width: 100%;
     text-align: center;
     display: block;
   }
 
-  .our-creation-header button{
+  .our-creation-header button {
     width: 60%;
     position: absolute;
     bottom: 0;
@@ -1207,7 +1357,8 @@
   }
 
   .our-creation-card.earth {
-    background-image:var(--card-gradient), url('images/mobile/image-deep-earth.jpg');
+    background-image: var(--card-gradient),
+      url("images/mobile/image-deep-earth.jpg");
   }
 
   .our-creation-card.earth h3 {
@@ -1221,7 +1372,6 @@
   .our-creation-card.above h3 {
     padding-right: 10rem;
   }
-
 }
 
 @media (max-width: 375px) {
@@ -1231,7 +1381,7 @@
   }
 
   .loopstudios-landing-page-navbar {
-    padding: 3rem 2rem;
+    padding: 3rem 1.5rem;
   }
 
   .toggle-menu {
@@ -1251,14 +1401,14 @@
     margin: 6rem auto;
   }
 
-  .loopstudio-header-content h1{
+  .loopstudio-header-content h1 {
     font-size: 2.5rem;
     line-height: 3rem;
     padding: 0;
   }
 
   .loopstudio-page-content {
-    padding: 4rem 2rem;
+    padding: 4rem 1.5rem;
     overflow: hidden;
   }
 
@@ -1266,7 +1416,6 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
-
   }
 
   .interactive-vr-section-left {
@@ -1285,23 +1434,23 @@
     padding: 0;
   }
 
-  .interactive-vr-heading{
+  .interactive-vr-heading {
     font-size: 2rem;
     padding: 0;
   }
 
-  .our-creation{
+  .our-creation {
     position: relative;
     text-align: center;
   }
 
-  .our-creation-header{
+  .our-creation-header {
     width: 100%;
     text-align: center;
     display: block;
   }
 
-  .our-creation-header button{
+  .our-creation-header button {
     width: 65%;
     position: absolute;
     bottom: 0;
@@ -1321,7 +1470,8 @@
   }
 
   .our-creation-card.earth {
-    background-image:var(--card-gradient), url('images/mobile/image-deep-earth.jpg');
+    background-image: var(--card-gradient),
+      url("images/mobile/image-deep-earth.jpg");
   }
 
   .our-creation-card.earth h3 {
