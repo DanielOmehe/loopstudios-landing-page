@@ -67,6 +67,10 @@
   display: none;
 }
 
+.toggle-menu {
+  display: none;
+}
+
 .loopstudio-header-content {
   width: 40%;
   margin: 5rem 0 0 10rem;
@@ -184,8 +188,8 @@
   cursor: pointer;
 }
 
-.our-creation-card:hover h3{
-    color: var(--color-black);
+.our-creation-card:hover h3 {
+  color: var(--color-black);
 }
 
 .our-creation-card h3 {
@@ -211,7 +215,7 @@
     url("images/desktop/image-deep-earth.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 
 .our-creation-card.arcade {
@@ -253,7 +257,8 @@
 }
 
 .our-creation-card.grid:hover {
-  background-image: var(--card-hover-gradient), url("images/desktop/image-grid.jpg");
+  background-image: var(--card-hover-gradient),
+    url("images/desktop/image-grid.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -376,4 +381,962 @@
   font-size: var(--font-size);
   font-family: var(--alate-font-family);
   color: var(--color-dark-gray);
+}
+
+@media (max-width: 1500px) {
+  .loopstudios-landing-page-navbar {
+    padding: 4rem 6rem;
+  }
+
+  .loopstudio-header-content {
+    margin: 5rem 0 0 6rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 6rem;
+  }
+
+  .interactive-vr-section-right {
+    right: -1.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 6rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .loopstudios-landing-page-navbar {
+    padding: 4rem 6rem;
+  }
+
+  .loopstudio-header-content {
+    width: 45%;
+    margin: 5rem 0 0 6rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 6rem;
+  }
+
+  .interactive-vr-section-right {
+    right: -5rem;
+  }
+}
+
+@media (max-width: 1310px) {
+  .loopstudios-landing-page-navbar {
+    padding: 4rem 6rem;
+  }
+
+  .loopstudio-header-content {
+    width: 50%;
+    margin: 5rem 0 0 6rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 6rem;
+  }
+
+  .interactive-vr-section-left {
+    width: 60%;
+    height: 400px;
+  }
+
+  .interactive-vr-section-right {
+    width: 550px;
+    bottom: -4.5rem;
+    right: 1.5rem;
+    padding: 3.5rem;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2.5rem;
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(4, 500px);
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 15rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 12rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 6rem;
+  }
+}
+
+@media (max-width: 1210px) {
+  .loopstudios-landing-page-navbar {
+    padding: 4rem 3rem;
+  }
+
+  .loopstudio-header-content {
+    width: 50%;
+    margin: 5rem 0 0 3rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 6rem;
+  }
+
+  .interactive-vr-section-left {
+    width: 60%;
+    height: 400px;
+  }
+
+  .interactive-vr-section-right {
+    width: 500px;
+    bottom: -4.5rem;
+    right: -6rem;
+    padding: 3.5rem;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2.5rem;
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(4, 500px);
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 15rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 12rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 1120px) {
+  .loopstudios-landing-page-navbar {
+    padding: 4rem 3rem;
+  }
+
+  .loopstudio-header-content {
+    width: 50%;
+    margin: 5rem 0 0 3rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 4rem 3rem;
+  }
+
+  .interactive-vr-section-left {
+    width: 65%;
+    height: 400px;
+  }
+
+  .interactive-vr-section-right {
+    width: 450px;
+    bottom: -4.5rem;
+    right: 0;
+    padding: 3.5rem;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2.5rem;
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(3, 500px);
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 8rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 6rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 2rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .loopstudios-landing-page-navbar {
+    padding: 3rem 2rem;
+  }
+
+  .loopstudio-header-content {
+    width: 50%;
+    margin: 5rem 0 0 3rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 4rem 3rem;
+  }
+
+  .interactive-vr-section-left {
+    width: 65%;
+    height: 400px;
+  }
+
+  .interactive-vr-section-right {
+    width: 450px;
+    bottom: -4.5rem;
+    right: 0;
+    padding: 3.5rem;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2.5rem;
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(4, 550px);
+    gap: 3rem;
+    background-position: center;
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 8rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 6rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 2rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 3rem;
+  }
+
+  .footer-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .loopstudios-landing-page-navbar {
+    padding: 3rem 2rem;
+  }
+
+  .loopstudio-nav-items {
+    gap: 1.5rem;
+  }
+
+  .loopstudio-header-content {
+    width: 60%;
+    margin: 6rem 0 0 2rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 6rem 2rem;
+    overflow: hidden;
+  }
+
+  .interactive-vr-section-left {
+    width: 65%;
+    height: 350px;
+  }
+
+  .interactive-vr-section-right {
+    width: 360px;
+    bottom: -4.5rem;
+    right: -3.5rem;
+    padding: 2rem;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2rem;
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(4, 500px);
+    gap: 1.5rem;
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 15rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 8rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 8rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 2rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .loopstudios-landing-page-navbar {
+    padding: 3rem 1rem;
+  }
+
+  .loopstudio-nav-items {
+    gap: 1.5rem;
+  }
+
+  .loopstudio-header-content {
+    width: 60%;
+    margin: 6rem 0 0 2rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 4rem 1rem;
+    overflow: hidden;
+  }
+
+  .interactive-vr-section-left {
+    width: 65%;
+    height: 350px;
+  }
+
+  .interactive-vr-section-right {
+    width: 360px;
+    bottom: -4.5rem;
+    right: -3.5rem;
+    padding: 2rem;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2rem;
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(4, 500px);
+    gap: 1.5rem;
+  }
+
+  .loopstudio-header-content {
+    width: 80%;
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 15rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 8rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 8rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 1rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .loopstudios-landing-page-navbar {
+    padding: 3rem 1rem;
+  }
+
+  .loopstudio-nav-items {
+    gap: 1.5rem;
+  }
+
+  .loopstudio-header-content {
+    width: 60%;
+    margin: 6rem 0 0 2rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 4rem 1rem;
+    overflow: hidden;
+  }
+
+  .interactive-vr-section-left {
+    width: 65%;
+    height: 350px;
+  }
+
+  .interactive-vr-section-right {
+    width: 360px;
+    bottom: -4.5rem;
+    right: -3.5rem;
+    padding: 2rem;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2rem;
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(4, 500px);
+    gap: 1rem;
+  }
+
+  .loopstudio-header-content {
+    width: 80%;
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 15rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 2rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 2rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 1rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .loopstudios-landing-page-header {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .loopstudios-landing-page-navbar {
+    padding: 3rem;
+  }
+
+  .toggle-menu {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+  }
+
+  .loopstudio-nav-items {
+    display: none;
+  }
+
+  .loopstudio-header-content {
+    width: 60%;
+    margin: 6rem 0 0 3rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 4rem 3rem;
+    overflow: hidden;
+  }
+
+  .interactive-vr-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+  }
+
+  .interactive-vr-section-left {
+    width: 100%;
+  }
+
+  .interactive-vr-section-right {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding: 0 3rem;
+  }
+
+  .interactive-vr-section-right p{
+    padding: 0;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2rem;
+  }
+
+  .loopstudio-header-content {
+    width: 80%;
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .our-creation{
+    position: relative;
+    text-align: center;
+  }
+
+  .our-creation-header{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .our-creation-header button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(8, 200px);
+    gap: 2rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 20rem;
+    text-align: left;
+  }
+
+  .our-creation-card.earth {
+    background-image:var(--card-gradient), url('images/mobile/image-deep-earth.jpg');
+  }
+
+  .our-creation-card.earth h3 {
+    padding-right: 24rem;
+  }
+
+  .our-creation-card.arcade {
+    background-image: url('images/mobile/image-night-arcade.jpg');
+  }
+
+  .our-creation-card.team {
+    background-image: url('images/mobile/image-soccer-team.jpg');
+  }
+
+  .our-creation-card.grid {
+    background-image: url('images/mobile/image-grid.jpg');
+  }
+
+  .our-creation-card.above {
+    background-image: url('images/mobile/image-from-above.jpg');
+  }
+
+  .our-creation-card.borealis {
+    background-image: url('images/mobile/image-pocket-borealis.jpg');
+  }
+
+  .our-creation-card.curiosity {
+    background-image: url('images/mobile/image-curiosity.jpg');
+  }
+
+  .our-creation-card.fisheye {
+    background-image: url('images/mobile/image-fisheye.jpg');
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 16rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 14rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .loopstudio-footer {
+    padding: 4rem 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .social-icons{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .loopstudio-footer-right p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .loopstudios-landing-page-header {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .loopstudios-landing-page-navbar {
+    padding: 3rem 2.5rem;
+  }
+
+  .interactive-vr-section-left {
+    width: 100%;
+  }
+
+  .interactive-vr-section-right {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding: 0 3rem;
+  }
+
+  .interactive-vr-section-right p{
+    padding: 0;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2rem;
+  }
+
+  .loopstudio-header-content {
+    width: 80%;
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .our-creation{
+    position: relative;
+    text-align: center;
+  }
+
+  .our-creation-header{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 12rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 10rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .loopstudios-landing-page-header {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .loopstudios-landing-page-navbar {
+    padding: 3rem 2rem;
+  }
+
+  .toggle-menu {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+  }
+
+  .loopstudio-nav-items {
+    display: none;
+  }
+
+  .loopstudio-header-content {
+    width: 60%;
+    margin: 6rem 0 0 2rem;
+  }
+
+  .loopstudio-page-content {
+    padding: 4rem 2rem;
+    overflow: hidden;
+  }
+
+  .interactive-vr-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+  }
+
+  .interactive-vr-section-left {
+    width: 100%;
+  }
+
+  .interactive-vr-section-right {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding: 0 3rem;
+  }
+
+  .interactive-vr-section-right p{
+    padding: 0;
+  }
+
+  .interactive-vr-heading {
+    font-size: 2rem;
+  }
+
+  .loopstudio-header-content {
+    width: 80%;
+  }
+
+  .loopstudio-header-content h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .our-creation{
+    position: relative;
+    text-align: center;
+  }
+
+  .our-creation-header{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .our-creation-header button{
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(8, 150px);
+    gap: 2rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 20rem;
+    text-align: left;
+  }
+
+  .our-creation-card.earth {
+    background-image:var(--card-gradient), url('images/mobile/image-deep-earth.jpg');
+  }
+
+  .our-creation-card.earth h3 {
+    padding-right: 24rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 12rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 10rem;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .loopstudios-landing-page-header {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .loopstudios-landing-page-navbar {
+    padding: 3rem 2rem;
+  }
+
+  .toggle-menu {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+  }
+
+  .loopstudio-nav-items {
+    display: none;
+  }
+
+  .loopstudio-header-content {
+    width: 85%;
+    margin: 6rem auto;
+  }
+
+  .loopstudio-header-content h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding: 0;
+  }
+
+  .loopstudio-page-content {
+    padding: 4rem 2rem;
+    overflow: hidden;
+  }
+
+  .interactive-vr-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+  }
+
+  .interactive-vr-section-left {
+    width: 100%;
+    height: 250px;
+  }
+
+  .interactive-vr-section-right {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  .interactive-vr-heading{
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .our-creation{
+    position: relative;
+    text-align: center;
+  }
+
+  .our-creation-header{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .our-creation-header button{
+    width: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .our-creation-cards {
+    grid-template-rows: repeat(8, 150px);
+    gap: 2rem;
+  }
+
+  .our-creation-card h3 {
+    padding-right: 20rem;
+    bottom: 1rem;
+    text-align: left;
+  }
+
+  .our-creation-card.earth {
+    background-image:var(--card-gradient), url('images/mobile/image-deep-earth.jpg');
+  }
+
+  .our-creation-card.earth h3 {
+    padding-right: 24rem;
+  }
+
+  .our-creation-card.team h3 {
+    padding-right: 7rem;
+  }
+
+  .our-creation-card.above h3 {
+    padding-right: 7rem;
+  }
+
+  .our-creation-header h2 {
+    font-size: 2rem;
+  }
 }
