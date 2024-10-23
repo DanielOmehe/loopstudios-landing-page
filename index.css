@@ -374,7 +374,7 @@
   position: absolute;
   bottom: -.5rem;
   left: 0;
-  /* display: none; */
+  display: none;
 }
 
 .loopstudio-footer-right {
